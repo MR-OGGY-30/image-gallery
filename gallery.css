@@ -110,10 +110,32 @@ i {
 }
 
 .gallery-box {
+  width: 20%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 2.5%;
   border-radius: 10px;
   border: 2px solid black;
+  float: left;
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery-box {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 5%;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery-box {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
 }
 
 .gallery-box:hover {
