@@ -117,6 +117,11 @@ i {
   border: 2px solid black;
   float: left;
 }
+.gallery-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 @media only screen and (max-width: 1000px) {
   .gallery-box {
@@ -126,6 +131,11 @@ i {
     border-radius: 10px;
     border: 2px solid black;
   }
+  .gallery-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 }
 
 @media only screen and (max-width: 500px) {
