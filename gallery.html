@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GALLERY</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="programming.gif" type="images/gif">
+
+  <!--adding bootstrap icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style-h.css">
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0 0 0 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin-top: 50px;
+    }
+
+    ul {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 1px 25px black;
+      border-radius: 0 0 10px 10px;
+      list-style-type: none;
+      z-index: 1;
+    }
+
+    ul::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    li {
+      text-align: center;
+      float: left;
+      width: 25%;
+    }
+
+    .nav:not(#gallery) {
+      text-decoration: none;
+      display: block;
+      padding: 10px 15px;
+      color: black;
+    }
+
+    #contact:hover #dropdown {
+      display: block;
+    }
+
+    .nav:hover:not(#gallery) {
+      color: white;
+      background-color: darkgrey;
+    }
+    #dropdown {
+      position: absolute;
+      box-shadow: -1px -1px 25px black;
+      width: 50%;
+      display: none;
+    }
+
+    .drop-item {
+      font-size: 15pt;
+      display: block;
+      width: 100%;
+      background-color: #f1f1f1;
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .drop-item:hover {
+      background-color: #ffffff;
+    }
+
+    #whatsapp:hover {
+      color: green;
+    }
+
+    #facebook:hover {
+      color: #0087FF;
+    }
+
+    #instagram:hover {
+      color: hotpink;
+    }
+
+    #twitter:hover {
+      color: deepskyblue;
+    }
+
+    #youtube:hover {
+      color: red;
+    }
+
+    i {
+      padding: 10px;
+    }
+
+    #gallery {
+      text-decoration: none;
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      background-color: #04AA6D;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a class="nav" href="#home">Home</a></li>
+    <li><a id="gallery" class="nav" href="javascript:void(0)">Gallery</a></li>
+    <li id="contact"><a class="nav" href="contact.html">Contact</a>
+      <div id="dropdown">
+        <a id="whatsapp" class="drop-item" href="https://www.whatsapp.com"><i class="bi bi-whatsapp"></i>Whatsapp</a>
+        <a id="facebook" class="drop-item" href="https://www.facebook.com"><i class="bi bi-facebook"></i>Facebook</a>
+        <a id="instagram" class="drop-item" href="https://www.instagram.com"><i class="bi bi-instagram"></i>Instagram</a>
+        <a id="twitter" class="drop-item" href="https://www.twitter.com"><i class="bi bi-twitter"></i>Twitter</a>
+        <a id="youtube" class="drop-item" href="https://www.youtube.com"><i class="bi bi-youtube"></i>Youtube</a>
+      </div>  
+    </li>
+    <li><a class="nav" href="about.html">About</a></li>
+  <ul/>
+</body>
+
+</html>
