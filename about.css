@@ -8,10 +8,12 @@
 body {
   background-image: url(pencil.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size: 100% 100%;
+  background-position: center;
   background-attachment: fixed;
   margin-top: 50px;
+  width: 100vw;
+  height: calc(100vh-50px);
 }
 
 ul {
