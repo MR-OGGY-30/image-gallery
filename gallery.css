@@ -40,7 +40,12 @@ li {
   padding: 10px 15px;
   color: black;
 }
-
+#home{
+  border-radius: 0 0 0 10px;
+}
+#about{
+  border-radius: 0 0 10px 0;
+}
 #contact:hover #dropdown {
   display: block;
 }

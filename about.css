@@ -45,7 +45,9 @@ li {
   padding: 10px 15px;
   color: black;
 }
-
+#home{
+  border-radius: 0 0 0 10px;
+}
 #contact:hover #dropdown {
   display: block;
 }
